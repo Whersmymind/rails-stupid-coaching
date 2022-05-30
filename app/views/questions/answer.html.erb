@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Stupid Coaching</h1>
+  <div class="question-css">
+    <p><%= @question%></p>
+    <p>- You</p>
+  </div>
+    <div class="answer-css">
+    <p><%= @answer %></p>
+    <p>- Your Coach</p>
+    </div>
+    <%= yield %>
+    <a href="#">Ask a new question</a>
+  </body>
+</html>
